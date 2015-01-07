@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C957F3061A5D36A800B8A2BA /* ANSnapchatAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */; };
-		C957F3081A5D36A800B8A2BA /* ANSnapchatAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */; };
 		C957F30E1A5D36A800B8A2BA /* libANSnapchatAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */; };
+		C957F3221A5D41E100B8A2BA /* SCAPILogin.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F31D1A5D41E100B8A2BA /* SCAPILogin.m */; };
+		C957F3231A5D41E100B8A2BA /* SCAPISession.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F31F1A5D41E100B8A2BA /* SCAPISession.m */; };
+		C957F3241A5D41E100B8A2BA /* SCFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3211A5D41E100B8A2BA /* SCFetcher.m */; };
+		C957F3281A5D41FE00B8A2BA /* SCSnapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3271A5D41FE00B8A2BA /* SCSnapManager.m */; };
+		C957F32C1A5D423D00B8A2BA /* SCSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F32B1A5D423D00B8A2BA /* SCSnap.m */; };
+		C957F3341A5D425F00B8A2BA /* SCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F32F1A5D425F00B8A2BA /* SCBlob.m */; };
+		C957F3351A5D425F00B8A2BA /* SCImageBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3311A5D425F00B8A2BA /* SCImageBlob.m */; };
+		C957F3361A5D425F00B8A2BA /* SCVideoBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3331A5D425F00B8A2BA /* SCVideoBlob.m */; };
+		C957F33C1A5D42E700B8A2BA /* SCAPIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3391A5D42E700B8A2BA /* SCAPIConfiguration.m */; };
+		C957F33D1A5D42E700B8A2BA /* SCAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F33B1A5D42E700B8A2BA /* SCAPIRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +37,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C957F3061A5D36A800B8A2BA /* ANSnapchatAPI.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,10 +44,28 @@
 
 /* Begin PBXFileReference section */
 		C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANSnapchatAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSnapchatAPI.h; sourceTree = "<group>"; };
-		C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSnapchatAPI.m; sourceTree = "<group>"; };
 		C957F30D1A5D36A800B8A2BA /* ANSnapchatAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANSnapchatAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C957F3131A5D36A800B8A2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C957F31C1A5D41E100B8A2BA /* SCAPILogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAPILogin.h; path = Sources/SCAPILogin.h; sourceTree = SOURCE_ROOT; };
+		C957F31D1A5D41E100B8A2BA /* SCAPILogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAPILogin.m; path = Sources/SCAPILogin.m; sourceTree = SOURCE_ROOT; };
+		C957F31E1A5D41E100B8A2BA /* SCAPISession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAPISession.h; path = Sources/SCAPISession.h; sourceTree = SOURCE_ROOT; };
+		C957F31F1A5D41E100B8A2BA /* SCAPISession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAPISession.m; path = Sources/SCAPISession.m; sourceTree = SOURCE_ROOT; };
+		C957F3201A5D41E100B8A2BA /* SCFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFetcher.h; path = Sources/SCFetcher.h; sourceTree = SOURCE_ROOT; };
+		C957F3211A5D41E100B8A2BA /* SCFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFetcher.m; path = Sources/SCFetcher.m; sourceTree = SOURCE_ROOT; };
+		C957F3261A5D41FE00B8A2BA /* SCSnapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnapManager.h; path = Sources/Managing/SCSnapManager.h; sourceTree = SOURCE_ROOT; };
+		C957F3271A5D41FE00B8A2BA /* SCSnapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnapManager.m; path = Sources/Managing/SCSnapManager.m; sourceTree = SOURCE_ROOT; };
+		C957F32A1A5D423D00B8A2BA /* SCSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnap.h; path = Sources/Data/SCSnap.h; sourceTree = SOURCE_ROOT; };
+		C957F32B1A5D423D00B8A2BA /* SCSnap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnap.m; path = Sources/Data/SCSnap.m; sourceTree = SOURCE_ROOT; };
+		C957F32E1A5D425F00B8A2BA /* SCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCBlob.h; path = Sources/Data/Blobs/SCBlob.h; sourceTree = SOURCE_ROOT; };
+		C957F32F1A5D425F00B8A2BA /* SCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCBlob.m; path = Sources/Data/Blobs/SCBlob.m; sourceTree = SOURCE_ROOT; };
+		C957F3301A5D425F00B8A2BA /* SCImageBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCImageBlob.h; path = Sources/Data/Blobs/SCImageBlob.h; sourceTree = SOURCE_ROOT; };
+		C957F3311A5D425F00B8A2BA /* SCImageBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCImageBlob.m; path = Sources/Data/Blobs/SCImageBlob.m; sourceTree = SOURCE_ROOT; };
+		C957F3321A5D425F00B8A2BA /* SCVideoBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCVideoBlob.h; path = Sources/Data/Blobs/SCVideoBlob.h; sourceTree = SOURCE_ROOT; };
+		C957F3331A5D425F00B8A2BA /* SCVideoBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCVideoBlob.m; path = Sources/Data/Blobs/SCVideoBlob.m; sourceTree = SOURCE_ROOT; };
+		C957F3381A5D42E700B8A2BA /* SCAPIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAPIConfiguration.h; path = Sources/Internal/SCAPIConfiguration.h; sourceTree = SOURCE_ROOT; };
+		C957F3391A5D42E700B8A2BA /* SCAPIConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAPIConfiguration.m; path = Sources/Internal/SCAPIConfiguration.m; sourceTree = SOURCE_ROOT; };
+		C957F33A1A5D42E700B8A2BA /* SCAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAPIRequest.h; path = Sources/Internal/SCAPIRequest.h; sourceTree = SOURCE_ROOT; };
+		C957F33B1A5D42E700B8A2BA /* SCAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAPIRequest.m; path = Sources/Internal/SCAPIRequest.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +90,8 @@
 		C957F2F91A5D36A800B8A2BA = {
 			isa = PBXGroup;
 			children = (
-				C957F3041A5D36A800B8A2BA /* ANSnapchatAPI */,
-				C957F3111A5D36A800B8A2BA /* ANSnapchatAPITests */,
+				C957F3041A5D36A800B8A2BA /* Sources */,
+				C957F3111A5D36A800B8A2BA /* Tests */,
 				C957F3031A5D36A800B8A2BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,20 +105,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C957F3041A5D36A800B8A2BA /* ANSnapchatAPI */ = {
+		C957F3041A5D36A800B8A2BA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */,
-				C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */,
+				C957F3371A5D42D400B8A2BA /* Internal */,
+				C957F3291A5D420A00B8A2BA /* Data */,
+				C957F3251A5D41EA00B8A2BA /* Managing */,
+				C957F31C1A5D41E100B8A2BA /* SCAPILogin.h */,
+				C957F31D1A5D41E100B8A2BA /* SCAPILogin.m */,
+				C957F31E1A5D41E100B8A2BA /* SCAPISession.h */,
+				C957F31F1A5D41E100B8A2BA /* SCAPISession.m */,
+				C957F3201A5D41E100B8A2BA /* SCFetcher.h */,
+				C957F3211A5D41E100B8A2BA /* SCFetcher.m */,
 			);
+			name = Sources;
 			path = ANSnapchatAPI;
 			sourceTree = "<group>";
 		};
-		C957F3111A5D36A800B8A2BA /* ANSnapchatAPITests */ = {
+		C957F3111A5D36A800B8A2BA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C957F3121A5D36A800B8A2BA /* Supporting Files */,
 			);
+			name = Tests;
 			path = ANSnapchatAPITests;
 			sourceTree = "<group>";
 		};
@@ -103,6 +137,49 @@
 				C957F3131A5D36A800B8A2BA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C957F3251A5D41EA00B8A2BA /* Managing */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3261A5D41FE00B8A2BA /* SCSnapManager.h */,
+				C957F3271A5D41FE00B8A2BA /* SCSnapManager.m */,
+			);
+			name = Managing;
+			sourceTree = "<group>";
+		};
+		C957F3291A5D420A00B8A2BA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C957F32D1A5D424C00B8A2BA /* Blobs */,
+				C957F32A1A5D423D00B8A2BA /* SCSnap.h */,
+				C957F32B1A5D423D00B8A2BA /* SCSnap.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C957F32D1A5D424C00B8A2BA /* Blobs */ = {
+			isa = PBXGroup;
+			children = (
+				C957F32E1A5D425F00B8A2BA /* SCBlob.h */,
+				C957F32F1A5D425F00B8A2BA /* SCBlob.m */,
+				C957F3301A5D425F00B8A2BA /* SCImageBlob.h */,
+				C957F3311A5D425F00B8A2BA /* SCImageBlob.m */,
+				C957F3321A5D425F00B8A2BA /* SCVideoBlob.h */,
+				C957F3331A5D425F00B8A2BA /* SCVideoBlob.m */,
+			);
+			name = Blobs;
+			sourceTree = "<group>";
+		};
+		C957F3371A5D42D400B8A2BA /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3381A5D42E700B8A2BA /* SCAPIConfiguration.h */,
+				C957F3391A5D42E700B8A2BA /* SCAPIConfiguration.m */,
+				C957F33A1A5D42E700B8A2BA /* SCAPIRequest.h */,
+				C957F33B1A5D42E700B8A2BA /* SCAPIRequest.m */,
+			);
+			name = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C957F3081A5D36A800B8A2BA /* ANSnapchatAPI.m in Sources */,
+				C957F3341A5D425F00B8A2BA /* SCBlob.m in Sources */,
+				C957F3351A5D425F00B8A2BA /* SCImageBlob.m in Sources */,
+				C957F3221A5D41E100B8A2BA /* SCAPILogin.m in Sources */,
+				C957F3281A5D41FE00B8A2BA /* SCSnapManager.m in Sources */,
+				C957F3361A5D425F00B8A2BA /* SCVideoBlob.m in Sources */,
+				C957F3241A5D41E100B8A2BA /* SCFetcher.m in Sources */,
+				C957F33D1A5D42E700B8A2BA /* SCAPIRequest.m in Sources */,
+				C957F3231A5D41E100B8A2BA /* SCAPISession.m in Sources */,
+				C957F32C1A5D423D00B8A2BA /* SCSnap.m in Sources */,
+				C957F33C1A5D42E700B8A2BA /* SCAPIConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +442,7 @@
 				C957F3181A5D36A800B8A2BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C957F3191A5D36A800B8A2BA /* Build configuration list for PBXNativeTarget "ANSnapchatAPITests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +451,7 @@
 				C957F31B1A5D36A800B8A2BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
