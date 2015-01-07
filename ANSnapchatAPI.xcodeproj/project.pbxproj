@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C957F3061A5D36A800B8A2BA /* ANSnapchatAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */; };
+		C957F3081A5D36A800B8A2BA /* ANSnapchatAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */; };
+		C957F30E1A5D36A800B8A2BA /* libANSnapchatAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C957F30F1A5D36A800B8A2BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C957F2FA1A5D36A800B8A2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C957F3011A5D36A800B8A2BA;
+			remoteInfo = ANSnapchatAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C957F3001A5D36A800B8A2BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C957F3061A5D36A800B8A2BA /* ANSnapchatAPI.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libANSnapchatAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSnapchatAPI.h; sourceTree = "<group>"; };
+		C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSnapchatAPI.m; sourceTree = "<group>"; };
+		C957F30D1A5D36A800B8A2BA /* ANSnapchatAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANSnapchatAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C957F3131A5D36A800B8A2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C957F2FF1A5D36A800B8A2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C957F30A1A5D36A800B8A2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C957F30E1A5D36A800B8A2BA /* libANSnapchatAPI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C957F2F91A5D36A800B8A2BA = {
+			isa = PBXGroup;
+			children = (
+				C957F3041A5D36A800B8A2BA /* ANSnapchatAPI */,
+				C957F3111A5D36A800B8A2BA /* ANSnapchatAPITests */,
+				C957F3031A5D36A800B8A2BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C957F3031A5D36A800B8A2BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */,
+				C957F30D1A5D36A800B8A2BA /* ANSnapchatAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C957F3041A5D36A800B8A2BA /* ANSnapchatAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3051A5D36A800B8A2BA /* ANSnapchatAPI.h */,
+				C957F3071A5D36A800B8A2BA /* ANSnapchatAPI.m */,
+			);
+			path = ANSnapchatAPI;
+			sourceTree = "<group>";
+		};
+		C957F3111A5D36A800B8A2BA /* ANSnapchatAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3121A5D36A800B8A2BA /* Supporting Files */,
+			);
+			path = ANSnapchatAPITests;
+			sourceTree = "<group>";
+		};
+		C957F3121A5D36A800B8A2BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C957F3131A5D36A800B8A2BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C957F3011A5D36A800B8A2BA /* ANSnapchatAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C957F3161A5D36A800B8A2BA /* Build configuration list for PBXNativeTarget "ANSnapchatAPI" */;
+			buildPhases = (
+				C957F2FE1A5D36A800B8A2BA /* Sources */,
+				C957F2FF1A5D36A800B8A2BA /* Frameworks */,
+				C957F3001A5D36A800B8A2BA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANSnapchatAPI;
+			productName = ANSnapchatAPI;
+			productReference = C957F3021A5D36A800B8A2BA /* libANSnapchatAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C957F30C1A5D36A800B8A2BA /* ANSnapchatAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C957F3191A5D36A800B8A2BA /* Build configuration list for PBXNativeTarget "ANSnapchatAPITests" */;
+			buildPhases = (
+				C957F3091A5D36A800B8A2BA /* Sources */,
+				C957F30A1A5D36A800B8A2BA /* Frameworks */,
+				C957F30B1A5D36A800B8A2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C957F3101A5D36A800B8A2BA /* PBXTargetDependency */,
+			);
+			name = ANSnapchatAPITests;
+			productName = ANSnapchatAPITests;
+			productReference = C957F30D1A5D36A800B8A2BA /* ANSnapchatAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C957F2FA1A5D36A800B8A2BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = unixpickle;
+				TargetAttributes = {
+					C957F3011A5D36A800B8A2BA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C957F30C1A5D36A800B8A2BA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C957F2FD1A5D36A800B8A2BA /* Build configuration list for PBXProject "ANSnapchatAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C957F2F91A5D36A800B8A2BA;
+			productRefGroup = C957F3031A5D36A800B8A2BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C957F3011A5D36A800B8A2BA /* ANSnapchatAPI */,
+				C957F30C1A5D36A800B8A2BA /* ANSnapchatAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C957F30B1A5D36A800B8A2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C957F2FE1A5D36A800B8A2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C957F3081A5D36A800B8A2BA /* ANSnapchatAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C957F3091A5D36A800B8A2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C957F3101A5D36A800B8A2BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C957F3011A5D36A800B8A2BA /* ANSnapchatAPI */;
+			targetProxy = C957F30F1A5D36A800B8A2BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C957F3141A5D36A800B8A2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C957F3151A5D36A800B8A2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C957F3171A5D36A800B8A2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C957F3181A5D36A800B8A2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C957F31A1A5D36A800B8A2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ANSnapchatAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C957F31B1A5D36A800B8A2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ANSnapchatAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C957F2FD1A5D36A800B8A2BA /* Build configuration list for PBXProject "ANSnapchatAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C957F3141A5D36A800B8A2BA /* Debug */,
+				C957F3151A5D36A800B8A2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C957F3161A5D36A800B8A2BA /* Build configuration list for PBXNativeTarget "ANSnapchatAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C957F3171A5D36A800B8A2BA /* Debug */,
+				C957F3181A5D36A800B8A2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C957F3191A5D36A800B8A2BA /* Build configuration list for PBXNativeTarget "ANSnapchatAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C957F31A1A5D36A800B8A2BA /* Debug */,
+				C957F31B1A5D36A800B8A2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C957F2FA1A5D36A800B8A2BA /* Project object */;
+}
