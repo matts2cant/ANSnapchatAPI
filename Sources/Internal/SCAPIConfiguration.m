@@ -21,7 +21,7 @@ static NSString * hexHash(NSData * input);
              @"secret": @"iEk21fuwZApXlz93750dmW22pw389dPwOk",
              @"static_token": @"m198sOkJEn37DjqZ32lpRu76xmw288xSQ9",
              @"url": @"https://feelinsonice-hrd.appspot.com",
-             @"user_agent": @"Snapchat/8.1.1 (iPad; iPhone OS 6.0; en_US; gzip)"};
+             @"user_agent": @"Snapchat/8.1.0.12 (iPhone7,2; iOS 8.1.2; gzip)"};
 }
 
 + (SCAPIConfiguration *)defaultAPIConfiguration {
@@ -117,7 +117,7 @@ static NSString * hexHash(NSData * input);
         result = [NSData dataWithBytesNoCopy:buffer length:encSize];
     } else {
         free(buffer);
-        NSLog(@"[ERROR] failed to decrypt| CCCryptoStatus: %d", cryptStatus);
+        NSLog(@"[ERROR] failed to encrypt| CCCryptoStatus: %d", cryptStatus);
     }
     
     return result;

@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 
+#import <NSData+CommonCrypto.h>
 #import "SCAPISession.h"
 
 @implementation SCAPISession
@@ -32,6 +33,8 @@
                                                  token:self.authToken
                                             dictionary:params];
 }
+
+
 
 - (SCFetcher *)fetchBlob:(NSString *)blobIdentifier
                 callback:(void (^)(NSError * error, SCBlob * blob))cb {
@@ -89,6 +92,59 @@
                                       callback:^(NSError * error, id result) {
                                           cb(error);
                                       }];
+}
+
+#pragma mark - Story -
+
+- (SCAPIRequest *)requestForSendingMedia:(NSString *)mediaPath isVideo:(BOOL)isVideo uuid:(NSString *)uuid {
+    CCCryptorStatus *status;
+    NSData * encrypted = [[NSData dataWithContentsOfFile:mediaPath] dataEncryptedUsingAlgorithm:kCCAlgorithmAES128 key:@"M02cnQ51Ji97vwT4" initializationVector:nil options:kCCOptionPKCS7Padding error:&status];
+    
+    NSLog(@"STATUS IS %@", status);
+    NSLog(@"UUID IS %@", uuid);
+
+    NSDictionary * req = @{@"username": [self.username lowercaseString],
+                           @"media_id": [NSString stringWithFormat:@"%@~%@", [self.username uppercaseString], [uuid uppercaseString]],
+                           @"type": isVideo ? @"1" : @"0",
+                           };
+    return [[SCAPIRequest alloc] initMultipartWithConfiguration:self.configuration path:@"/bq/upload" token:self.authToken dictionary:req filePath:mediaPath fileName:@"data"];
+}
+
+- (SCAPIRequest *)requestForSendingStory:(NSString *)uuid isVideo:(BOOL)isVideo{
+    NSInteger story_ts = [[SCAPIRequest timestampString] integerValue];
+    NSDictionary * req = @{@"username": [self.username lowercaseString],
+                           @"media_id": [NSString stringWithFormat:@"%@~%@", [self.username uppercaseString], [uuid uppercaseString]],
+                           @"client_id": [NSString stringWithFormat:@"%@~%@", [self.username uppercaseString], [uuid uppercaseString]],
+                           @"caption_text_display": @"Via SOUNDS.App",
+                           @"type": isVideo ? @"1" : @"0",
+                           @"zipped": @"0",
+                           @"time": @"10",
+                           @"story_timestamp": [NSString stringWithFormat: @"%ld", (long)story_ts - 280]
+                           };
+    return [[SCAPIRequest alloc] initWithConfiguration:self.configuration
+                                                  path:@"/bq/post_story"
+                                                 token:self.authToken
+                                            dictionary:req];
+}
+
+- (SCFetcher *)publishStory:(NSString *)mediaPath isVideo:(BOOL)isVideo callback:(void (^)(NSError * error))cb
+{
+    NSString *uuid = [[NSUUID UUID] UUIDString];
+    SCAPIRequest *request =[ self requestForSendingMedia:mediaPath isVideo:isVideo uuid:uuid];
+    SCAPIRequest *request2 =[ self requestForSendingStory:uuid isVideo:isVideo];
+    return [SCFetcher fetcherStartedForRequestNoJSON:request
+                                     callback:^(NSError * error, id result) {
+                                         if (error == nil)
+                                             [SCFetcher fetcherStartedForRequestNoJSON:request2
+                                                                              callback:^(NSError * error, id result) {
+                                                                                  NSLog(@"RESULT IS %@", [[NSString alloc]initWithData:result encoding:NSUTF8StringEncoding]);
+                                                                                  cb(error);
+                                                                                  return;
+                                                                              }];
+                                         
+                                         cb(error);
+                                         return;
+                                     }];
 }
 
 #pragma mark - Extra -

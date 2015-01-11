@@ -22,4 +22,11 @@
                       token:(NSString *)token
                  dictionary:(NSDictionary *)dict;
 
+- (id)initMultipartWithConfiguration:(SCAPIConfiguration *)enc
+                                path:(NSString *)path
+                               token:(NSString *)token
+                          dictionary:(NSDictionary *)dict
+                            filePath:(NSString *)filePath
+                            fileName:(NSString *)name;
+
 @end
